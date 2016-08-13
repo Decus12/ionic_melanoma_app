@@ -28,9 +28,9 @@ Type "source ~/.bash_profile" and then "mkvirtualenv cv" to terminal. Once that 
 
 
 ==========Installing to the device============
-android-debug.apk used for installation is located in the main folder (ionic_melanoma_app). Follow the normal apk installation procedure. However, due to server not having set IP-address it may change and you may have to set it manually to the apps code beforehand. There are two locations to set it, one is in services.js and the other is in controllers.js. They are set to 192.168.1.9 at default.
+Due to server not having set IP-address yet, it may change and you may have to set it manually to the apps code beforehand. There are two locations to set it, one is in services.js and the other is in controllers.js. They are set to 192.168.1.9 at default.
 
-Once server is started use ipconfig on command prompt (ifconfig on Mac terminal) and see what ip the server is using. If it's 192.168.1.9 you can use the apk file for installation, if not change the IP address in services.js and controllers.js to match the one that server is using. You can then build and install the app on the device by typing "ionic run android" to command prompt while in the ionic_melanoma_app folder and your phone or tablet is plugged in with a usb cable.
+Once server is started use ipconfig on command prompt (ifconfig on Mac terminal) and see what ip the server is using. If it's 192.168.1.9 then there are no need for changes, if not change the IP address in services.js and controllers.js to match the one that server is using. You can then build and install the app on the device by typing "ionic run android" to command prompt while in the ionic_melanoma_app folder and your phone or tablet is plugged in with a usb cable.
 
 Mac users may need to use "sudo ionic run android".
 
